@@ -1,10 +1,22 @@
+import Header from "./header/Header";
+import Footer from "./footer/Footer";
+import Presentation from "./presentation/Presentation";
+import AboutMe from "./about me/AboutMe";
 import "../css/App.css";
+import { HeaderContextProvider } from "../contexts/header/HeaderContext";
 
 function App() {
   return (
-    <div className="container">
-      <h1>Maxi Cadús</h1>
-    </div>
+    <>
+      <HeaderContextProvider>
+        <Header />
+      </HeaderContextProvider>
+      <main>
+        <Presentation />
+        <AboutMe />
+      </main>
+      <Footer />
+    </>
   );
 }
 
