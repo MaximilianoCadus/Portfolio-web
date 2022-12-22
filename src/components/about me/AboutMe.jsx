@@ -7,7 +7,7 @@ import "../../css/about me/about-me.css";
 
 function AboutMe() {
   return (
-    <div className="about-me">
+    <div className="about-me" id="about">
       <h2>About Me</h2>
       <p>
         Hello! My name is Maxi and I love building websites. My interest in web

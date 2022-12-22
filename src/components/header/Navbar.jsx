@@ -1,27 +1,69 @@
 import { useContext } from "react";
 import { HeaderContext } from "../../contexts/header/HeaderContext";
+import { Link } from "react-scroll";
 
 function Navbar() {
-  const { clicked, handleClick } = useContext(HeaderContext);
+  const { handleClick } = useContext(HeaderContext);
 
   return (
     <>
       <nav>
         <hr />
         <div className="links">
-          <a onClick={handleClick} href="#">
+          <Link
+            className="link"
+            onClick={handleClick}
+            to="presentation"
+            smooth={true}
+            offset={-100}
+            duration={500}
+          >
+            Presentation
+          </Link>
+          <Link
+            className="link"
+            onClick={handleClick}
+            to="about"
+            smooth={true}
+            offset={-50}
+            duration={500}
+          >
             About Me
-          </a>
-          <a onClick={handleClick} href="#">
+          </Link>
+          <Link
+            className="link"
+            onClick={handleClick}
+            to="projects"
+            smooth={true}
+            offset={-100}
+            duration={500}
+          >
             Projects
-          </a>
-          <a onClick={handleClick} href="#">
+          </Link>
+          <Link
+            className="link"
+            onClick={handleClick}
+            to="contact"
+            smooth={true}
+            offset={-100}
+            duration={500}
+          >
             Contact Me
-          </a>
-          <a onClick={handleClick} href="#">
+          </Link>
+          <a
+            className="link"
+            onClick={handleClick}
+            href="https://www.linkedin.com/in/maximilianocadus/"
+            target="_blank"
+          >
             LinkedIn
           </a>
-          <a onClick={handleClick} href="#">
+          <a
+            className="link"
+            onClick={handleClick}
+            href="https://github.com/MaximilianoCadus"
+            target="_blank"
+          >
             GitHub
           </a>
         </div>
