@@ -1,0 +1,9 @@
+@media (min-width: 768px){
+    main{margin-top: 120px;}
+
+    .header{height: 120px;}
+
+    .nav{margin-top: 120px;}
+
+    .project{height: 300px;}
+}

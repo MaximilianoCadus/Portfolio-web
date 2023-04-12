@@ -1,4 +1,5 @@
-import "../../css/presentation/Presentation.css";
+import "../../css/presentation/presentation.css";
+import CV from "../../assets/documents/Curriculum Vitae - Maximiliano Cadús (English).pdf";
 
 function Presentation() {
   return (
@@ -11,11 +12,7 @@ function Presentation() {
         designing) websites.
       </p>
       <div className="cv">
-        <a
-          className="download"
-          href="../../assets/documents/Curriculum Vitae - Maximiliano Cadús (English).pdf"
-          download="Maximiliano Cadús"
-        >
+        <a className="download" href={`${CV}`} download="Maximiliano Cadús">
           Download CV
         </a>
       </div>
