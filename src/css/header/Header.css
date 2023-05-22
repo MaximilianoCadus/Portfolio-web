@@ -1,0 +1,110 @@
+.header {
+  background-color: #1f041f;
+  width: 100%;
+  height: 70px;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  position: fixed;
+}
+
+.logo {
+  height: 50px;
+  width: 50px;
+  z-index: 1;
+  position: relative;
+}
+
+.initial {
+  position: fixed;
+  background-color: #000000;
+  top: 0;
+  right: -1000px;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s ease;
+}
+
+.active {
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.nav-icon {
+  width: 30px;
+  height: 25px;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  z-index: 1;
+}
+
+.nav-icon span {
+  background-color: #ffffff;
+  position: absolute;
+  border-radius: 2px;
+  width: 100%;
+  height: 2px;
+  transition-duration: 0.5s;
+}
+
+.nav-icon span:nth-child(1) {
+  top: 0px;
+  left: 0px;
+}
+
+.nav-icon span:nth-child(2) {
+  top: 11.5px;
+  left: 0px;
+}
+
+.nav-icon span:nth-child(3) {
+  bottom: 0px;
+  left: 0px;
+}
+
+.nav-icon.open span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 8px;
+}
+
+.nav-icon.open span:nth-child(2) {
+  display: none;
+}
+
+.nav-icon.open span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 8px;
+}
+
+nav {
+  display: block;
+  margin-top: 70px;
+  height: 60%;
+}
+
+nav > hr:first-of-type {
+  margin-bottom: 25px;
+}
+
+.links {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.link {
+  text-decoration: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.desktop-nav{
+  display: none;
+}

@@ -1,0 +1,36 @@
+.about-me {
+  background-color: #000000;
+  margin-top: 50px;
+  padding: 20px 30px;
+}
+
+.about-me h2 {
+  font-size: 2.1875rem;
+  color: #5d0d5d;
+  margin-bottom: 20px;
+}
+
+.about-me p {
+  font-family: "Roboto", sans-serif;
+  line-height: 2.5rem;
+  font-size: 1rem;
+}
+
+.about-me p:last-of-type {
+  margin-top: 20px;
+}
+
+.about-me ul {
+  margin-top: 10px;
+  list-style: none;
+  font-size: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.about-me li {
+  height: 50px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}

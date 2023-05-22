@@ -1,0 +1,69 @@
+.contact-me {
+  background-color: #000000;
+  padding: 20px 30px;
+}
+
+.contact-me h2 {
+  font-size: 2.1875rem;
+  color: #5d0d5d;
+  margin-bottom: 20px;
+}
+
+.contact-me p {
+  font-family: "Roboto", sans-serif;
+  line-height: 2.5rem;
+  font-size: 1rem;
+}
+
+.feedback-input {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 1.125rem;
+  border-radius: 5px;
+  background-color: transparent;
+  border: 2px solid #52057b;
+  transition: all 0.4s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width: 100%;
+  outline: 0;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+}
+
+.feedback-input:focus {
+  border: 2px solid #892cdc;
+}
+
+textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+[type="submit"] {
+  width: 100%;
+  background: #52057b;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 1.25rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: all 0.4s;
+  margin-top: -4px;
+  font-weight: 700;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+}
+[type="submit"]:hover {
+  background: #892cdc;
+}

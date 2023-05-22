@@ -1,0 +1,43 @@
+.presentation {
+  padding: 0 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.title {
+  font-size: 2.625rem;
+  width: 75%;
+}
+
+.title span {
+  color: #7c117c;
+  font-size: 3rem;
+}
+
+.description {
+  font-family: "Roboto", sans-serif;
+  line-height: 2.5rem;
+}
+
+.download {
+  background: #1f041f;
+  border: #7c117c 4px solid;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.125rem;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s linear;
+  -webkit-transition: all 0.4s linear;
+  -moz-transition: all 0.4s linear;
+  -ms-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+}
+
+.download:hover {
+  background-color: #7c117c;
+}
