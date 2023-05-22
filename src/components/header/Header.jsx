@@ -12,6 +12,9 @@ function Header() {
     <>
       <header className="header">
         <Logo />
+        <div className="desktop-nav">
+          <Navbar />
+        </div>
         <BurguerButton />
         <div className={`initial ${clicked ? "active" : ""}`}>
           <Navbar />

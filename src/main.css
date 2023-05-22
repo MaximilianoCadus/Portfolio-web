@@ -13,3 +13,37 @@ body {
     "Cantarell", "Open Sans", sans-serif;
   font-size: 1.25rem;
 }
+
+/* Para navegadores webkit (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #7c117c;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #9e1d9e;
+}
+
+/* Para navegadores Firefox */
+body {
+  scrollbar-width: thin;
+  scrollbar-color: #7c117c #F5F5F5;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #7c117c;
+  border-radius: 4px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #9e1d9e;
+}

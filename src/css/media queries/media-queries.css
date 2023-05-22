@@ -1,4 +1,4 @@
-@media (min-width: 768px){
+@media (min-width: 760px){
     main{margin-top: 120px;}
 
     .header{height: 120px;}
@@ -6,4 +6,80 @@
     .nav{margin-top: 120px;}
 
     .project{height: 300px;}
+}
+
+@media (min-width: 1040px){
+    .initial{
+        display: none;
+    }
+
+    .icon{
+        display: none;
+    }
+
+    .desktop-nav{
+        display: initial;
+        width: 80%;
+    }
+
+    .desktop-nav hr{
+        display: none;
+    }
+
+    nav{
+        margin-top: 0;
+    }
+
+    .links{
+        flex-direction: row;
+    }
+
+    .link:hover{
+        border-bottom: #7c117c 5px solid;
+        letter-spacing: 3px;
+      }
+
+    .link{
+        transition: all 0.4s linear;
+        -webkit-transition: all 0.4s linear;
+        -moz-transition: all 0.4s linear;
+        -ms-transition: all 0.4s linear;
+        -o-transition: all 0.4s linear;
+    }
+
+    .presentation{
+        padding: 0 412px;
+    }
+
+    .about-me{
+        padding: 20px 150px;
+    }
+
+    .projects{
+        padding: 20px 150px;
+    }
+
+    .projects-container{
+        flex-direction: row;
+        gap: 80px;
+    }
+
+    .project{
+        height: 200px;
+        width: 325px;
+        transition: all 0.4s linear;
+        -webkit-transition: all 0.4s linear;
+        -moz-transition: all 0.4s linear;
+        -ms-transition: all 0.4s linear;
+        -o-transition: all 0.4s linear;
+    }
+
+    .project:hover{
+        width: 400px;
+    }
+
+    .contact-me{
+        padding: 20px 150px;
+    }
+
 }
